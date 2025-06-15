@@ -1,12 +1,12 @@
-permissions:
-  contents: read
-  packages: write
-
 name: GHCR Push Test
 
 on:
   push:
     branches: [ main ]
+
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   docker:
